@@ -1,0 +1,136 @@
+***********************************  How to run the program  *********************************************
+we will explore this in steps ==>>
+
+Step 1:-> *******  Install python in your machine ******
+
+     A :-) If you already have python into your machine then goto step (2).
+ 
+     B :-) if you have windows 10,8.1,7 (** in some conditions it requires updates if you are using windows 7 so update it).
+    i   :-) Download latest python version from ((https://www.python.org/getit/)) acoording to your machine ie x86-64 executable installer.
+    ii  :-) Now start the installation .
+    iii :-) First Check the option add python 3.5 to PATH then click on Install Now .
+    iv  :-) if User Account Controol appears then click on yes .
+    v   :-) Now python will automatically install after installation click on close
+             Congratulations python is installed in your machine .
+    vi  :-) To check python is installed or not go to windows button and write python and click on python idle
+              and it starts your python interactive shell .
+
+ 
+     C :-)  If you have linux based machine then follow below activities to install python .
+     i  :-) Although we can install the core packages and their dependencies using yum and aptitude (or apt-get), we will explain how to perform the installation from source instead .
+     ii  :-) The reason is simple: this allows us to have the latest stable release of the language (3.6) and to provide a distribution-agnostic installation method .
+     iii :-) Prior to installing Python in CentOS 7, let’s make sure our system has all the necessary development dependencies :
+                  # yum -y groupinstall development
+                  # yum -y install zlib-devel
+     iv :-) In Debian we will need to install gcc, make, and the zlib compression / decompression library :
+                  # aptitude -y install gcc make zlib1g-dev
+     v  :-) To install Python 3.6, run the following commands :
+                  # wget https://www.python.org/ftp/python/3.6.3/Python-3.6.3.tar.xz
+                  # tar xJf Python-3.6.3.tar.xz
+                  # cd Python-3.6.3
+                  # ./configure
+                  # make
+                  # make install
+     vi  :-) Now this may take a while .When the installation is complete, use which to verify the location of the main binary : 
+                  # which python3
+                  # python3 -V
+     vii :-) The output of the above command should be similar to :
+                  root@mail:- which python3
+                  /usr/local/bin/python3
+                  root@mail:- python3 -v
+                  python 3.6.5(or latest version)
+                  root@mail:-# python3
+                  python 3.6.5 (default , March 29 2018, 3:28:50)
+                  [GCC 6.3.0 20180516 ] on linux
+                  Type "help","copyright","credits" or "license" for more information.
+                  >>>
+     viii :-) To exit the python prompt,simply type :
+                  quit()
+                  or
+                  exit()
+               and press Enter
+      ix  :-) Install python IDLE  in linux Python IDLE is a GUI-based tool for Python. If you wish to install the Python IDLE, grab the package named idle (Debian) or python-tools (CentOS) .
+                  # apt-get install idle       [On Debian]
+                  # yum install python-tools   [On CentOS]
+       x  :-) Type the following command to start the Python IDLE .
+                  # idle
+
+       D  :-) Install Python 3.6 in Ubuntu 14.04 and 16.04 By default, Ubuntu 14.04 and 16.04 ship in with Python 2.7 and Python 3.5. To install latest Python 3.6 version, you can use “deadsnakes” team PPA which contains more recent Python versions packaged for Ubuntu .
+                   $ sudo add-apt-repository ppa:deadsnakes/ppa
+                   $ sudo apt update
+                   $ sudo apt install python3.6
+
+
+       E  :-) Install Python 3.6 in Ubuntu 16.10 and 17.04 .
+        i  :-) On Ubuntu 16.10 and 17.04, you can find Python 3.6 package in the Universe repository and easily install it via apt as shown .
+                   $ sudo apt update
+                   $ sudo apt install python3.6
+        ii  :-) To view a list of all Python binaries installed on your system, run the following ls command .
+                   $ ls -l /usr/bin/python*
+        iii :-) check Python version using the following command .
+                   $ python -V
+        iv  :-) To use Python 3.6, invoke the following command .
+                   $ python3.6
+        v  :-) O/P is similar as :
+                   aaronkilik@tecmint:-  99items
+                   $ python 3.6
+                   python 3.6.5 (default ,March 29 2018, 3:28:50)
+                   [GCC 5.4.0 20160609] on linux
+                   Type "help","copyright","credits" or "license" for more information.
+                   >>> 
+       vi :-) To exit the Python interpreter, type the following command and press Enter .
+                   quit()
+                   or
+                   exit()
+       vii :-) That’s all! In this short article, we have explained how to install Python 3.6 in Ubuntu 14.04, 16.04, 16.10 and 17.04 via the APT package manager .
+
+       F  :-) To install python 3.x in Mac os .
+       i   :-)Note that we said install Python 3, not update to Python 3, because how this will work is installing Python 3 while simultaneously maintaining Python 2 on the Mac. This is essential because apparently some Mac apps rely on Python 2 support, so if you attempt to upgrade Python 2.x to Python 3.x in Mac OS you will eventually find that something is broken, perhaps critically so. With that in mind you should not attempt to update the existing preinstalled Python release on a Mac, instead you will just have a co-installation of Python 3 for full compatibility .
+       ii  :-) And yes, Python 3 and Python 2 can co-exist on a Mac without any conflict, the usage commands will just be slightly different .
+       iii :-) Perhaps the simplest way to install Python 3 is by using the Python package installer from python.org .
+       iv  :-) Go to Python.org downloads page here and download the latest Python installer package .
+       v   :-) Run the Python installer package and install Python 3 onto the Mac  Python 3.6.x requires about 100mb of disk space to install. Installation is quick, and you’ll have Python 3.x alongside Python 2.x on the Mac .
+       vi  :-) Once Python 3 is installed you will find a Python3 folder within the /Applications directory of your Mac. You’ll also find the simple IDE called IDLE within the /Applications/MacPython3/ directory, which basically gives you the same Python IDE you’d encounter if you ran ‘python3’ at the command prompt in Terminal .
+       vii  :-) You can also install Python 3.x on a Mac through Homebrew .
+       viii :-) After you have installed Python with Homebrew or with the package installer, you can check the updated new version of Python with :
+                   python3 --version
+
+
+===============NOW INSTALLATION OF PYTHON IS COMPLETE AND PROCEED TO STEP 2===========
+
+Step 2 :-) *****************Now you have to download some python packges **********************
+         
+       i    :-) Press (window) and (r) key simultaneously so Run dialog appears and type cmd and click on ok (as i am using windows 10,if you are using differnent OS you just have to open command prompt as a administrator) .
+       ii   :-) To upgrade pip package manager type follwing command and hit enter .
+                py -m pip install pip 
+                (then it shows the following command to upgrade pip) 
+       iii  :-) Type following command to install bs4 .
+               py -m pip install bs4 
+       iv   :-) it takes some time install beautifulsoup4 and bs4 in your machine automatically .
+       v    :-) Now install other packages with following commands one by one .
+               py -m pip install numpy
+               py -m pip install jason
+               py -m pip install pandas
+               py -m pip install pyexcel
+               py -m pip install pyexcel-io
+               py -m pip install pyexcel-xls
+               py -m pip install requests
+               py -m pip install request
+               py -m pip install urllib3
+               py -m pip install xlsxWriter
+       
+======NOW ALL THE PACKAGES ARE INSTALLED AND YOU ARE READY TO RUN THE PROGRAM=====
+
+
+Step 3   :-) *************** To run the program and create excel workbook of Sport_Score_Report ***************
+
+       i    :-) First of all you have to install winrar in your machine (installation is simple you can install it from google {https://winrar.en.softonic.com/download}) .
+       ii   :-) After installation right click on cricket score project and click on extract here . it creates a folder of name (cricket score project) .
+       iii  :-) Open the folder and right click on cricket (python file) . Extension would be (.py) you can check extension in the properties .
+       iv   :-) Just hit enter if you does not want to see the outputs .
+       v    :-) If you want to see the o/p then right click on cricket and move your cursor to Edit with IDLE and then move your cursor to the Edit with IDLE 3.6(64 bit) and click on it .
+       vi   :-) Program will open in scripting mode without write anything in program and press f5 then if save dialog box appear then click on save and o/p of program would show .
+       vii  :-) Now Excel file will create in same extracted folder (cricket score project) .
+       viii :-) Congratulation Open the Excel file and see the current scores .
+
+****************************   THANK YOU FOR YOUR SUPPORT   ************************************ 
